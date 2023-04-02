@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^0.4.0",
+    "hono": "^3.1.5",
+    "langchain": "^0.0.45",
+    "mongodb": "^5.1.0",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "index.js",
+      "sources/*",
+      "sources/**/*"
+    ],
+    "ext": "js,json,yaml"
+  }
+}
